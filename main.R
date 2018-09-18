@@ -13,8 +13,8 @@ do.uplow = function(df, upperbound_parameter, lowerbound_parameter, percentage_f
   lowerbound_relative = (data * lowerbound_parameter)
   
   
-  if (percentage_flag == TRUE) upperbound_relative <- upperbound_relative* 100
-  if (percentage_flag == TRUE) lowerbound_relative <- lowerbound_relative * 100
+  if (percentage_flag == TRUE) upperbound_relative <- upperbound_parameter * 100
+  if (percentage_flag == TRUE) lowerbound_relative <- lowerbound_parameter * 100
   
   return(data.frame(
     .ri = df$.ri[1],
