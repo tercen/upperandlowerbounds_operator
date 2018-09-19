@@ -23,6 +23,8 @@ __Installing this operator from the app store__
 
 [__configuration screenshot__](./doc/screenshot/operator_screenshot.png)
 
+![configuration screenshot](./doc/screenshot/operator_screenshot.png)
+
 
 ### Feedback
 [__log an issue__](https://github.com/tercen/upperandlowerbounds_operator/issues)
