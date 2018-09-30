@@ -38,6 +38,8 @@ Use this operator when wanting to determine upper and lower bounds. These genera
 
 #### References
 
+![configuration screenshot](./doc/screenshot/operator_screenshot.png)
+
 
 ##### See Also
 
