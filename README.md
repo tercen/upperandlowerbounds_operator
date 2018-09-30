@@ -1,41 +1,45 @@
-# Upper and lower bounds 
-`upperandlowerbounds` operator creates an upper and lower bound values as a fraction of a given data point.
+# upperandlowerbounds
 
-### When to use
-Use this operator when wanting to determine upper and lower bounds. These generated bounds are usually used in a downstream data step for a graphics representation using grid lines which correspond to the boundary values (see horizontal grid lines feature) 
+#### Description
 
-### Installation
+`upperandlowerbounds` operator computes an upper and lower bound values as a fraction of a given data point.
 
-__Installing this operator from repository__
+##### Usage
+Input projection|.
+---|---
+`y-axis`             | is the input data for the multiplication per cell
 
-`https://github.com/tercen/upperandlowerbounds_operator.git`
+Input parameters|.
+---|---
+`fraction`           | numeric, fraction value
+`percentage`         | boolean, the relative values are returned as percentages
 
+Output relations|.
+---|---
+`upperbound_absolute`| numeric, upper absolute bound value
+`lowbound_absolute`  | numeric, lower absolute bound value
+`upperbound_relative`| numeric, upper relative bound value
+`lowbound_relative`  | numeric, lower relative bound value
 
-__Installing this operator from the app store__
+##### Details
+The operator takes the mean value of a cell and calculates an upper bound and a lowerbound.
+The computation is done per cell. There are four values colculated and returned for each of the input cell.
 
-
-### How to configure
-* add a Data step on canvas and double click data step to open the cross-tab window
-* configure a projection view where there is only one data point in each cell
-* add the operator to the view
-* run the data step
-* new boundary values are now available for any suceeding Data step
-
-[__configuration screenshot__](./doc/screenshot/operator_screenshot.png)
-
-
-### Feedback
-[__log an issue__](https://github.com/tercen/upperandlowerbounds_operator/issues)
-
-### Documentation
-additional docs found in [__doc directory__](./doc)
-
-### Development information
-
-* How to setup for dev
-    * [dev setup](https://tercen.github.io/appbuilders-guide/)
-* How to deploy
-    * [deployment commands](./doc/DEPLOY.md)
+The operator takes the mean value and calculates an upper bound by adding to it
+```
+  upperbound_absolute = value + (value * fraction)
+  lowerbound_absolute = value + (value * fraction)
+  
+  upperbound_relative = (value * fraction)
+  lowerbound_relative = (value * fraction)
+```
+Use this operator when wanting to determine upper and lower bounds. These generated bounds are usually used in a downstream data step for a graphics representation using grid lines which correspond to the boundary values (see horizontal grid lines feature)
 
 
+#### References
 
+
+##### See Also
+
+
+#### Examples
