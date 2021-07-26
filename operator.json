@@ -1,6 +1,6 @@
 {
-  "name": "Upper and lower bounds",
-  "description": "Upper and lower bounds as a percentage of a value",
+  "name": "Upper and Lower Bounds",
+  "description": "Calculates an upper and lower bound value as a fraction of a given data point.",
   "tags": ["simple statistics", "Pharma"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/upperandlowerbounds_operator"],
