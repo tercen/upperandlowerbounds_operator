@@ -1,7 +1,7 @@
 {
   "kind": "OperatorUnitTest",
   "name": "upperandlowerbounds",
-  "namespace": "test",
+  "namespace": "ds0",
   "propertyValues": [
     {
     "kind": "PropertyValue",
