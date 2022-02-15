@@ -1,0 +1,20 @@
+{
+  "kind": "OperatorUnitTest",
+  "name": "upperandlowerbounds",
+  "namespace": "test",
+  "propertyValues": [
+    {
+    "kind": "PropertyValue",
+    "name": "percentage",
+    "value": "false" 
+    }
+  ], 
+  "inputDataUri": "c03_simple_exp.tsv",
+  "outputDataUri": ["table1.csv","table2.csv","table3.csv"],
+  "columns": ["Observation"],
+  "rows": ["Variable"],
+  "colors": [],
+  "labels": [],
+  "yAxis": "Measurement",
+  "xAxis": ""
+}
