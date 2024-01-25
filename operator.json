@@ -1,29 +1,33 @@
 {
   "name": "Upper and Lower Bounds",
   "description": "Calculates an upper and lower bound value as a fraction of a given data point.",
-  "tags": ["simple statistics", "Pharma"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/upperandlowerbounds_operator"],
+  "tags": [
+    "descriptive statistics"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/upperandlowerbounds_operator"
+  ],
   "properties": [
-  {
-    "kind": "DoubleProperty",
-    "name": "upper bound",
-    "defaultValue": 1,
-    "description": "upper value as a fraction"
-  },
-   {
-    "kind": "DoubleProperty",
-    "name": "lower bound",
-    "defaultValue": -1,
-    "description": "lower value as a fraction"
-  },
-  {
-    "kind": "BooleanProperty",
-    "name": "percentage",
-    "defaultValue": true,
-    "description": "A logical variable indicating whether to return the relative bounds as a percentage. If TRUE then it returns a percentage."
-  }
+    {
+      "kind": "DoubleProperty",
+      "name": "upper bound",
+      "defaultValue": 1,
+      "description": "upper value as a fraction"
+    },
+    {
+      "kind": "DoubleProperty",
+      "name": "lower bound",
+      "defaultValue": -1,
+      "description": "lower value as a fraction"
+    },
+    {
+      "kind": "BooleanProperty",
+      "name": "percentage",
+      "defaultValue": true,
+      "description": "A logical variable indicating whether to return the relative bounds as a percentage. If TRUE then it returns a percentage."
+    }
   ]
 }
-
-
