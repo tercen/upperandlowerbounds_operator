@@ -29,5 +29,55 @@
       "defaultValue": true,
       "description": "A logical variable indicating whether to return the relative bounds as a percentage. If TRUE then it returns a percentage."
     }
-  ]
+  ],
+  "operatorSpec": {
+    "kind": "OperatorSpec",
+    "ontologyUri": "https://tercen.com/_ontology/tercen",
+    "ontologyVersion": "1.0.0",
+    "inputSpecs": [
+      {
+        "kind": "CrosstabSpec",
+        "metaFactors": [
+          {
+            "kind": "MetaFactor",
+            "name": "Row",
+            "type": "",
+            "description": "Row dimension factors",
+            "ontologyMapping": "variable",
+            "crosstabMapping": "row",
+            "cardinality": "0..n",
+            "factors": []
+          },
+          {
+            "kind": "MetaFactor",
+            "name": "Column",
+            "type": "",
+            "description": "Column dimension factors",
+            "ontologyMapping": "observation",
+            "crosstabMapping": "column",
+            "cardinality": "0..n",
+            "factors": []
+          }
+        ],
+        "axis": [
+          {
+            "kind": "AxisSpec",
+            "metaFactors": [
+              {
+                "kind": "MetaFactor",
+                "name": "Y-Axis",
+                "type": "numeric",
+                "description": "Values to calculate bounds for",
+                "ontologyMapping": "measurement",
+                "crosstabMapping": "y",
+                "cardinality": "1..n",
+                "factors": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "outputSpecsV2": []
+  }
 }
